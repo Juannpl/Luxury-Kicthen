@@ -62,3 +62,68 @@ h3{
 .social-media{
     text-align: center;
 }
+/* 
+
+    GENERAL
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root{
+    --rougelinear: rgba(224, 43, 26, 1);
+    --rougetext: #E02B1A;
+    --blanc: #fff;
+    --noirclair: #1E1E1E;
+    --noir: #121212;
+    --gris: #595959;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 
+
+    HEADER
+
+*/
+
+.header{
+    background-color: var(--rougelinear);
+    height: 6.8rem;
+    display: grid;
+    align-items: center;
+}
+
+.logo{
+    color: var(--blanc);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.row{
+    display: flex;
+}
+
+.nav_container{
+    justify-content: space-around;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.items_list{
+    padding: 0 0.5rem;
+    height: auto;
+    display: grid;
+    align-items: center;
+}
+
+

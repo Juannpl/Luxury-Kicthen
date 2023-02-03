@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Inscription - LK</title>
+    <title>Identification - LK</title>
 </head>
 
 <body>
@@ -29,37 +29,31 @@
         </nav>
     </header>
     <main>
-        <div class="create-account-container">
-            <h1>CRÉER UN COMPTE</h1>
-            <h3>Vous avez déjà un compte? <a href=""><span id="identification-span">Identifiez vous ici</span></a></h3>
-            <div class="create-account-form">
-                <form action="post">
-                    <div>
-                        <input type="text" for="last-namname" placeholder="Nom">
-                    </div>
-                    <div>
-                        <input type="text" for="first-name" placeholder="Prénom">
-                    </div>
-                    <div>
-                        <input type="text" for="phone" placeholder="Numéro de téléphone">
-                    </div>
-                    <div>
-                        <input type="email" for="email" placeholder="Mail">
-                    </div>
-                    <div>
-                        <input type="text" for="code" placeholder="Code postal">
-                    </div>
-                    <div>
-                        <input type="text" for="adress" placeholder="Adresse">
-                    </div>
-                    <div class="conditions">
-                        <input type="checkbox" name="sell-conditions" id="conditions">
-                        <p>En créant un compte, vous acceptez les conditions de vente. Veuillez consulter notre notice
-                            de protections de vos informations personnelles et notre notice cookies.</p>
-                    </div>
-                    <button type="submit">S'INSCRIRE</button>
-                </form>
+        <div class="container-identification">
+            <h1>S'IDENTIFIER</h1>
+            <div class="social-identification">
+                <button id="fb-button"><a href=""></a><img src="img/other/icons8-facebook-nouveau (2).svg" alt="">
+                    CONTINUER AVEC FACEBOOK</button>
+                <button id="apple-button"><a href=""></a><img src="img/other/icons8-apple-logo.svg" alt=""> CONTINUER
+                    AVEC APPLE</button>
+                <button id="google-button"><a href=""></a><img src="img/other/Google__G__Logo.svg" alt="">CONTINUER AVEC
+                    GOOGLE</button>
             </div>
+            <div>
+                <h3>Vous avez déjà un compte? <a href=""><span id="identification-span">Identifiez vous ici</span></a>
+                </h3>
+            </div>
+            <form action="" method="get">
+                <div class="form-identification">
+                    <div>
+                        <input type="email" for="email" placeholder="E-mail ou numéro de téléphone">
+                    </div>
+                    <div>
+                        <input type="password" for="password" placeholder="Mot de passe">
+                    </div>
+                    <button type="submit">SE CONNECTER</button>
+                </div>
+            </form>
         </div>
     </main>
     <footer>

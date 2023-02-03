@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/panier_vide.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>Mon Panier</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav_container row">
+            <div class="logo">
+                <p>LUXURY KITCHEN</p>
+            </div>
+            <div class="barre_categorie">
+                <ul class="row">
+                    <li><a href="#">Poêles</a></li>
+                    <li><a href="#">Verres</a></li>
+                    <li><a href="#">Acessoires</a></li>
+                    <li><a href="#">Couverts</a></li>
+                    <li><a href="#">Assiettes</a></li>
+                    <li><a href="#">Moules et plaques</a></li>
+                </ul>
+            </div>
+            <div class="nav_list">
+                <ul class="row">
+                    <li class="items_list">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <li class="items_list">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <a id="openBtn"  onclick="myFunction()" >
+                        <li class="items_list">
+                            <box-icon name='menu' color='#ffffff' size=2.2rem></box-icon>
+                        </li>
+                    </a>   
+                </ul>            
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="barre_categorie_mobile">
+            <ul class="row">
+                <li><a href="#">Poêles</a></li>
+                <li><a href="#">Verres</a></li>
+                <li><a href="#">Acessoires</a></li>
+                <li><a href="#">Couverts</a></li>
+                <li><a href="#">Assiettes</a></li>
+                <li><a href="#">Moules et plaques</a></li>
+            </ul>
+        </div>
+        <div class="titre">
+            <h1>Mon panier</h1>
+        </div>
+        <section class="changement">   
+            <div class="contenu">
+                <img src="../img/other/panier vide.png" alt="panier vide" width="50%">
+            </div>
+            <div class="contenu weight">
+                <p>Panier vide</p>
+            </div>
+            <div class="contenu">
+                <p class="opacity">
+                    Ton panier est encore vide, découvre tout <br> ce que nous avons pour toi
+                </p>
+            </div>    
+            <div class="contenu">
+                <button type="button" class="btn_blanc">DECOUVRIR
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

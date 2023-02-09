@@ -1,3 +1,7 @@
+main{
+    background-color: var(--noir);
+}
+
 .changement{
     width: 100%;
     display: flex;

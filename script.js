@@ -20,19 +20,6 @@ function closeNav() {
 
 
 
-// function myFunction() {
-
-//     if(document.getElementById("barre_categorie_mobile").style.display = "block") {
-//         (document.getElementById("barre_categorie_mobile").style.display = "none");
-        
-//     }else (document.getElementById("barre_categorie_mobile").style.display = "none");{
-//         document.getElementById("barre_categorie_mobile").style.display = "block"
-
-// }
-// }
-
-
-
 
 
 

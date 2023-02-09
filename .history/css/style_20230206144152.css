@@ -1,0 +1,699 @@
+/* 
+
+    GENERAL
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root{
+    --rougelinear: rgba(224, 43, 26, 1);
+    --rougetext: #E02B1A;
+    --blanc: #fff;
+    --noirclair: #1E1E1E;
+    --noir: #121212;
+    --gris: #595959;
+}
+
+*/*,
+*::after,
+*::before*/{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.controle img{
+    width: 100%;
+}
+
+.liens{
+    text-decoration: none;
+}
+
+p{
+    
+}
+
+/* 
+
+    HEADER
+
+*/
+
+.header{
+    background-color: var(--rougelinear);
+    height: 6rem;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    color: var(--blanc);
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.barre_categorie{
+    display: none;
+}
+
+#closeBtn{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+#barre_categorie_mobile{
+    color: var(--blanc);
+    width: 308px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-color: var(--rougelinear);
+    transition: left 0.5s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Active class */
+#barre_categorie_mobile.active{
+    z-index: 3;
+}
+
+#transparent.active{
+    z-index: 2;
+}
+
+#transparent{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -3;
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+}
+
+.reseaux{
+    justify-content: center;
+}
+
+.sociaux{
+    padding: 2% ;
+}
+
+#barre_categorie_mobile ul{
+    flex-direction: column;
+}
+
+#barre_categorie_mobile ul a{
+    color: var(--blanc);
+    font-weight: 550;
+    font-size: 23px;
+}
+
+#barre_categorie_mobile ul li{
+    margin: 15px 0px;
+}
+
+.nav_container{
+    justify-content: space-between;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.roo{
+    display: flex;
+}
+
+.items_list{
+    padding: 0 0.5rem;
+    height: auto;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav_list{
+    padding-right: 3%;
+}
+
+.nav_contents{
+    width: 80%;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.nav_contents div{
+    margin: 5% 0;
+}
+
+.btn-black{
+    width: 171px;
+    height: 35px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    border: 0px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.btn-clear{
+    border: 1.7px solid var(--blanc);
+    color: var(--blanc);
+    background-color: transparent;
+    width: 133px;
+    height: 33px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.roww{
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.opacityy{
+    opacity: 63%;
+}
+
+.items p{
+    margin-left: 5%;
+}
+
+/* 
+
+    MAIN
+
+*/
+
+.btn-red{
+    height: 23px;
+    width: 135px;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--rougelinear);
+    color: var(--blanc);
+
+}
+
+.swipe {
+    display: flex;
+}
+
+#juan{
+    background-color: var(--noir);
+    padding: 3% 3%;
+}
+
+.controle{
+    height: 190px;
+    width: 100%;
+
+}
+
+.description h2{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--blanc);
+}
+
+.inherit {
+    color: var(--blanc);
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 1rem;
+
+}
+
+.card{
+    text-align: center;
+    background-color: var(--gris);
+}
+
+/* desktop = 1224px, tablette = 768px */
+
+@media only screen and (min-width: 768px){
+    .logo{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1224px){
+    .barre_categorie_mobile{
+        display: none;
+    }
+
+    .barre_categorie{
+        display: revert;
+        width: 70%;
+    }
+    
+    .barre_categorie li{
+        padding: 0% 2%;
+    }
+    
+    .barre_categorie a{
+        color: var(--blanc);
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .nav_list {
+        padding-right: 0;
+    }
+    
+    .logo {
+        padding-left: 0;
+    }
+
+    .roo {
+        justify-content: center;
+    }
+
+    #openBtn{
+        display: none;
+    }
+}
+
+
+/* ---------- Footer ---------- */
+
+footer{
+    width: 100%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-footer{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #121212;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-infos{
+    display: none;
+}
+
+.contact-infos p{
+    font-size: 16px;
+    color: rgb(255, 255, 255, .5);
+}
+
+.container-footer h3{
+    text-align: center;
+    margin: 25px 0 25px 0;
+    font-size: 18px;
+}
+
+.download{
+    text-align: center;
+}
+
+.picto{
+    width: 30%;
+}
+
+.logos-paiement{
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#visa{
+    width: 70px;
+    height: 95px;
+}
+
+#mastercard{
+    width: 70px;
+    height: 30px;
+}
+
+#paypal{
+    width: 35px;
+    height: 35px;
+}
+
+.social-media{
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/* ---------- Page d'inscription ---------- */
+
+.create-account-container{
+    width: 100%;
+    height: 90%;
+    background-color:var(--noirclair);
+    text-align: center;
+    color: var(--blanc);
+    display: grid;
+    gap: 5px;
+    padding-top: 8%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.create-account-container h1{
+    font-size: 18px;
+}
+
+.create-account-container h3{
+    font-size: 12px;
+}
+
+#identification-span{
+    color: var(--rougetext);
+}
+
+.create-account-form{
+    padding: 2%;
+}
+
+.create-account-form input{
+    width: 80%;
+    height: 60px;
+    margin: 3%;
+    padding-left: 3%;
+    border-radius: 3px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 15px;
+}
+
+.conditions{
+    display: flex;
+}
+
+.conditions p{
+    padding-top: 3%;
+    font-size: 13px;
+    text-align: left;
+}
+
+#conditions{
+    width: 16px;
+    height: 16px;
+}
+
+.create-account-form button{
+    width: 120px;
+    height: 35px;
+    margin: 4% 0 4% 0;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+}
+
+
+/* ---------- Page d'identification ---------- */
+
+.container-identification{
+    background-color: var(--noirclair);
+    color: var(--blanc);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    gap: 20px;
+    padding: 120px 0 70px;
+}
+
+.container-identification h1{
+    font-size: 18px;
+}
+
+.container-identification input{
+    width: 300px;
+    height: 60px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    border-radius: 3px;
+    padding-left: 2%;
+}
+
+.container-identification h3{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.social-identification button{
+    width: 266px;
+    height: 35px;
+    border-radius: 20px;
+    color: var(--blanc);
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fb-button{
+    background-color: #039be5;
+    border: none;
+}
+
+#apple-button{
+    background-color: var(--noir);
+    border: none;
+} 
+
+#google-button{
+    background-color: var(--noirclair);
+    border: var(--blanc) 1px solid;
+}
+
+.social-identification img{
+    width: 24px;
+    height: 24px;
+}
+
+.social-identification{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-identification input{
+    margin-bottom: 7%;
+}
+
+.form-identification button{
+    width: 140px;
+    height: 40px;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 7%;
+}
+
+
+
+/* -------------------- Tablet -------------------- */
+
+
+@media only screen and (min-device-width : 768px){
+
+    /* ---------- Footer ---------- */
+
+    .container-footer{
+        height: 430px;
+    }
+
+    .container-footer-tablet{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-infos{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align:left;
+    }
+
+    .download{
+        width: 40%;
+    }
+
+    .picto{
+        width: 45%
+    }
+
+    .logos-paiement{
+        width: 40%;
+    }
+
+    /* ---------- Page d'inscription ---------- */
+
+    .create-account-container h1{
+        font-size: 24px;
+    }
+
+    .create-account-container h3{
+        font-size: 17px;
+        padding-top: 1.5%;
+    }
+
+    .create-account-form input{
+        width: 450px;
+        height: 70px;
+        font-size: 18px;
+        padding-left: 2%;
+        margin: 2% 0 .5% 0;
+    }
+
+    .conditions{
+        width: 63%;
+        margin-left: 20%;
+    }
+    
+
+
+    /* ---------- Page d'identification ---------- */
+
+    .container-identification{
+        padding: 70px 0 10px 0;
+    }
+
+    .container-identification h1{
+        font-size: 24px;
+    }
+    
+    .social-identification button{
+        width: 492px;
+        height: 63px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .container-identification h3{
+        font-size: 18px;
+    }
+
+    .form-identification input{
+        width: 520px;
+        height: 75px;
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+
+    .form-identification button{
+        width: 246px;
+        height: 60px;
+        margin-top: 1%;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+/* -------------------- Desktop -------------------- */
+
+
+@media only screen and (min-device-width : 1224px){
+
+/* ---------- Footer ---------- */
+
+    .logos-paiement{
+        width: 20%;
+    }
+
+    .paiement h3{
+        padding-top: 1%
+    }
+
+
+    /* ---------- Page d'inscription ---------- */
+
+    .create-account-container h1{
+        font-size: 24px;
+    }
+
+    .create-account-container h3{
+        font-size: 18px;
+        padding-top: 1.5%;
+    }
+
+    .create-account-form input{
+        width: 40%;
+        height: 80px;
+        font-size: 20px;
+        padding-left: 2%;
+        margin: 2% 0 .5% 0;
+    }
+
+    .conditions{
+        width: 43%;
+        margin-left: 29%;
+    }
+    
+    .conditions p{
+        padding-top: 3%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .create-account-form button{
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    #conditions{
+        width: 25px;
+        height: 30px;
+    }
+
+
+
+
+    /* ---------- Page d'identification ---------- */
+
+
+}
+
+

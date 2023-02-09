@@ -1,14 +1,35 @@
+/* 
+
+    GENERAL
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: inherit;
+:root{
+    --rougelinear: rgba(224, 43, 26, 1);
+    --rougetext: #E02B1A;
+    --blanc: #fff;
+    --noirclair: #1E1E1E;
+    --noir: #121212;
+    --gris: #595959;
 }
 
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
 /* ---------- Footer ---------- */
+
+
 
 footer{
     width: 100%;
@@ -79,7 +100,12 @@ footer{
 }
 
 
+
+
 /* ---------- Page d'inscription ---------- */
+
+
+
 
 .create-account-container{
     width: 100%;
@@ -146,12 +172,17 @@ footer{
     font-size: 15px;
     font-weight: 600;
     border: none;
+    cursor: pointer;
 }
+
 
 
 /* ---------- Page d'identification ---------- */
 
+
+
 .container-identification{
+    width: 100%;
     background-color: var(--noirclair);
     color: var(--blanc);
     text-align: center;
@@ -166,7 +197,7 @@ footer{
 }
 
 .container-identification input{
-    width: 300px;
+    width: 70%;
     height: 60px;
     background-color: var(--noirclair);
     border: var(--gris) 1px solid;
@@ -177,6 +208,19 @@ footer{
 .container-identification h3{
     font-size: 12px;
     padding: 10px;
+}
+
+.social-identification img{
+    width: 24px;
+    height: 24px;
+    margin-right: 2%;
+}
+
+.social-identification{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social-identification button{
@@ -192,37 +236,30 @@ footer{
 }
 
 #fb-button{
+    width: 100%;
     background-color: #039be5;
     border: none;
+    cursor: pointer;
 }
 
 #apple-button{
     background-color: var(--noir);
     border: none;
+    cursor: pointer;;
 } 
 
 #google-button{
     background-color: var(--noirclair);
     border: var(--blanc) 1px solid;
+    cursor: pointer;
 }
 
-.social-identification img{
-    width: 24px;
-    height: 24px;
-}
-
-.social-identification{
-    text-align: center;
+.form-identification{
     display: grid;
-    justify-content: center;
     gap: 20px;
 }
 
-.form-identification input{
-    margin-bottom: 7%;
-}
-
-.form-identification button{
+#connexion-button{
     width: 140px;
     height: 40px;
     background-color: var(--rougetext);
@@ -231,12 +268,216 @@ footer{
     font-weight: 600;
     border-radius: 5px;
     border: none;
-    margin-bottom: 7%;
+    margin: 10% 0 7% 0;
+    text-align: center;
+    cursor: pointer;
 }
 
 
 
-/* -------------------- Tablet -------------------- */
+/* ---------- Page d'adresse livraison ---------- */
+
+
+
+.adress-container{
+    width: 100%; 
+    height: 90%;
+    background-color:var(--noirclair);
+    color: var(--blanc);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3%;
+}
+
+.adress-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.adress-container select{
+    width: 80%;
+    height: 45px;
+    margin-top: 5%;
+}
+
+.adress-container label{
+    width: 81%;
+}
+
+.adress-container input{
+    width: 80%;
+    height: 45px;
+    margin-bottom: 3%;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 1%;
+}
+
+.adress-container select{
+    margin-bottom: 3%;
+    background-color: var(--noirclair);
+    color: var(--gris);
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.adress-form h1{
+    font-size: 18px;
+    padding-top: 5%; 
+    text-align: center;
+}
+
+#adress-label{
+    font-size: 16px;
+}
+
+.adress-form button{
+    width: 205px;
+    height: 44px;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.adress-form .conditions input{
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 9%;
+}
+
+.conditions{
+    width: 100%;
+}
+
+.submit{
+    display: flex;
+    margin: 5% 0 10% 0;
+    text-align: center;
+}
+
+
+
+/* ---------- Page de paiement ---------- */
+
+
+
+.paiement-container{
+    width: 100%;
+    background-color: var(--noirclair);
+    color: var(--blanc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.paiement-container h1{
+    text-align: center;
+    font-size: 18px;
+    margin: 10% 0 15% 0;
+}
+
+.paiement-form-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paiement-form-container form{
+    width: 100%;
+}
+
+.account-name{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.account-name input{
+    width: 100%;
+    height: 45px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.account-name label{
+    margin-bottom: 3%;
+}
+
+.paiement-form-container .expiration-date{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.paiement-form-container .expiration-date input{
+    width: 40%;
+    height: 45px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: var(--gris);
+    margin: 3% 0 10% 0;
+}
+
+#ccv{
+    width: 93%;
+    height: 45px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: var(--gris);
+    margin-bottom: 10%;
+}
+
+.paiement-form-container p{
+    font-size: 15px;
+    margin-bottom: 3%;
+}
+
+#yes{
+    margin-right: 5%;
+}
+
+.paiement-form-container .submit{
+    display: flex;
+    justify-content: center;
+}
+
+.paiement-form-container .submit button{
+    width: 205px;
+    height: 44px;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10% 0 10% 0;
+}
+
+
+
+/* ------------------------- Tablet ------------------------- */
+
 
 
 @media only screen and (min-device-width : 768px){
@@ -271,7 +512,11 @@ footer{
         width: 40%;
     }
 
+
+
     /* ---------- Page d'inscription ---------- */
+
+
 
     .create-account-container h1{
         font-size: 24px;
@@ -299,18 +544,21 @@ footer{
 
     /* ---------- Page d'identification ---------- */
 
+
+
     .container-identification{
-        padding: 70px 0 10px 0;
+        padding: 5% 0 0 0;
     }
 
     .container-identification h1{
         font-size: 24px;
+        margin-bottom: 3%;
     }
     
     .social-identification button{
         width: 492px;
-        height: 63px;
-        border-radius: 5px;
+        height: 45px;
+        border-radius: 20px;
         font-size: 15px;
     }
 
@@ -318,11 +566,15 @@ footer{
         font-size: 18px;
     }
 
+    .form-identification{
+        margin-top: 3%;
+    }
+
     .form-identification input{
         width: 520px;
-        height: 75px;
+        height: 60px;
         font-size: 20px;
-        margin-bottom: 3%;
+        margin-bottom: 1%;
     }
 
     .form-identification button{
@@ -331,6 +583,36 @@ footer{
         margin-top: 1%;
         font-size: 24px;
         font-weight: 500;
+    }
+
+
+    /* ---------- Page d'adresse livraison ---------- */
+
+
+    .adress-container h1{
+        font-size: 24px;
+    }
+
+    .adress-container select{
+        width: 60%;
+    }
+
+    .adress-container input{
+        width: 60%;
+    }
+
+    .adress-container label{
+        width: 61%;
+        font-size: 20px;
+    }
+
+    .adress-form .conditions input{
+        margin-left: 0%;
+    }
+
+    .conditions{
+        width: 80%;
+        font-size: 16px;
     }
 }
 
@@ -341,7 +623,7 @@ footer{
 
 
 
-/* -------------------- Desktop -------------------- */
+/* ------------------------- Desktop ------------------------- */
 
 
 @media only screen and (min-device-width : 1224px){
@@ -357,7 +639,9 @@ footer{
     }
 
 
+
     /* ---------- Page d'inscription ---------- */
+
 
     .create-account-container h1{
         font-size: 24px;
@@ -404,6 +688,45 @@ footer{
     /* ---------- Page d'identification ---------- */
 
 
+    .container-identification{
+        padding-top: 3%;
+    }
+
+    .container-identification h1{
+        margin-bottom: 1%;
+    }
+
+    .social-identification button{
+        border-radius: 20px;
+        height: 45px;
+    }
+
+    .form-identification{
+        margin-top: 1%;
+    }
+
+    .form-identification input{
+        margin-bottom: 0;
+        height: 60px;
+    }
+
+    #connexion-button{
+        margin: 4% 0 4% 0;
+    }
+    
+
+    /* ---------- Page d'adresse livraison ---------- */
+
+    .conditions{
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .adress-form .conditions input{
+        margin-left: -6%;
+    }
+
+  
 }
 
 
@@ -415,34 +738,6 @@ footer{
 
 
 
-
-
-/* 
-
-    GENERAL
-
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-
-:root{
-    --rougelinear: rgba(224, 43, 26, 1);
-    --rougetext: #E02B1A;
-    --blanc: #fff;
-    --noirclair: #1E1E1E;
-    --noir: #121212;
-    --gris: #595959;
-}
-
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    list-style: none;
-    text-decoration: none;
-}
 
 /* 
 

@@ -55,6 +55,10 @@ img {
     padding-left: 5%;
 }
 
+.logo a{
+    color: var(--blanc);
+}
+
 .logo box-icon {
     display: none;
 }
@@ -249,13 +253,6 @@ img {
     font-weight: 500;
 }
 
-.card img {
-    height: 190px;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-} 
-
 .titre{
     height: 23px;
     /* width: 356px; */
@@ -272,6 +269,7 @@ img {
 
 .controle {
     width: 206px;
+    /* width: 260px; */
 }
 
 .containeer {

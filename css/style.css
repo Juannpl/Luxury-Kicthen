@@ -15,12 +15,7 @@
     --gris: #595959;
 }
 
-*
-
-/*,
-*::after,
-*::before*/
-    {
+* {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -58,6 +53,10 @@ img {
     font-weight: 600;
     text-align: center;
     padding-left: 5%;
+}
+
+.logo box-icon {
+    display: none;
 }
 
 .barre_categorie {
@@ -125,7 +124,11 @@ img {
     font-size: 23px;
 }
 
-#barre_categorie_mobile ul li {
+.row a{
+    color: var(--blanc);
+}
+
+#barre_categorie_mobile ul li{
     margin: 15px 0px;
 }
 
@@ -212,8 +215,8 @@ img {
     color: var(--blanc);
 }
 
-#juan {
-    background-color: var(--noir);
+#juan{
+    background-color: var(--noirclair);
     padding: 2% 2%;
 }
 
@@ -251,10 +254,9 @@ img {
     object-fit: cover;
     width: 100%;
     border-radius: 8px 8px 0 0;
-}
+} 
 
-
-.titre {
+.titre{
     height: 23px;
     /* width: 356px; */
     color: var(--blanc);
@@ -313,12 +315,6 @@ button {
     font-size: 13px;
     font-weight: 500;
 }
-
-/* .card {
-    width: 40%;
-    background-color: #595959;
-    border-radius: 8px;
-} */
 
 .card img {
     height: 190px;
@@ -381,7 +377,7 @@ button {
     .barre_categorie li {
         padding: 0% 2%;
     }
-
+    
     .barre_categorie a {
         color: var(--blanc);
         font-weight: 500;
@@ -929,7 +925,7 @@ footer {
     color: var(--blanc);
 }
 
-.active {
+.profil-categories .active {
     text-decoration: underline;
     text-decoration-color: var(--rougetext);
     text-underline-offset: 39%;

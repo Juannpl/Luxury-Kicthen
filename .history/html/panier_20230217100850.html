@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="stylesheet" href="../css/panier.css">
+    <title>Acceuil - LK</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- DEBUT DE NAV DESKTOP -->
+        <nav class="nav_container row">
+            <div class="logo">
+                <p>LUXURY KITCHEN</p>
+                <box-icon name='chevron-left' type='solid' color='#ffffff' size="lg"></box-icon>
+            </div>
+            <div class="barre_categorie">
+                <ul class="row">
+                    <li><a href="poêle.html">Poêles</a></li>
+                    <li><a href="verres.html">Verres</a></li>
+                    <li><a href="acessoire.html">Acessoires</a></li>
+                    <li><a href="couvert.html">Couverts</a></li>
+                    <li><a href="assiette.html">Assiettes</a></li>
+                    <li><a href="moule.html">Moules et plaques</a></li>
+                </ul>
+            </div>
+            <div class="nav_list">
+                <ul class="row">
+                    <li class="items_list">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <li class="items_list">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <a id="openBtn">
+                        <li class="items_list">
+                            <box-icon name='menu' color='#ffffff' size=2.2rem></box-icon>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIN DE NAV DESKTOP -->
+        <!-- COMMENCEMENT DE LA BARRE DE NAVIGATION MOBILE -->
+        <div id="transparent"></div>
+        <section id="barre_categorie_mobile">
+            <div id="closeBtn">
+                <box-icon name='x' color='#ffffff' size='3rem'></box-icon>
+            </div>
+            <div class="nav_contents row">
+                <div>
+                    <ul class="row">
+                        <li><a href="poêle.html">Poêles</a></li>
+                        <li><a href="verres.html">Verres</a></li>
+                        <li><a href="acessoire.html">Acessoires</a></li>
+                        <li><a href="couvert.html">Couverts</a></li>
+                        <li><a href="assiette.html">Assiettes</a></li>
+                        <li><a href="moule.html">Moules et plaques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="opacityy">
+                        Devenez membre pour accéder au meilleur des produits.
+                    </p>
+                </div>
+                <div>
+                    <button type="button" class="btn-black">Nous rejoindre</button>
+                </div>
+                <div>
+                    <button type="button" class="btn-clear">S'identifier</button>
+                </div>
+                <div class="items">
+                    <div class="roww">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Panier</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon type='solid' name='package' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Commande</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Mon profil</p>
+                    </div>
+                </div>
+                <div class="reseaux row">
+                    <div class="sociaux">
+                        <box-icon name='facebook-circle' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='twitter' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='instagram-alt' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE LA BARRE DE NAVIGATION MOBILE -->
+    </header>
+    <main>
+        <div class="container">
+            <div class="gauche">
+                <div class="title_panier">
+                    <h2>mon panier</h2>
+                </div>
+                <div class="container_card">
+                    <div class="img_container">
+                        <img src="../img/poêle/poele1.jpg" alt="idk">
+                    </div>
+                    <div class="text_icon">
+                        <div class="text">
+                            <p>Poêle à manche amovible</p>
+                        </div>
+                        <div class="icon_prix">
+                            <div class="icon">
+                                <div class="pen">
+                                    <iconify-icon icon="la:pen" style="color: white;" width="25"></iconify-icon>
+                                </div>
+                                <div class="garbage">
+                                    <iconify-icon icon="material-symbols:delete-outline-rounded" style="color: white;"
+                                        width="25"></iconify-icon>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>55,00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_card">
+                    <div class="img_container">
+                        <img src="../img/accessoire/accessoire1.png" alt="idk">
+                    </div>
+                    <div class="text_icon">
+                        <div class="text">
+                            <p>Ensemble d’ustensiles</p>
+                        </div>
+                        <div class="icon_prix">
+                            <div class="icon">
+                                <div class="pen">
+                                    <iconify-icon icon="la:pen" style="color: white;" width="25"></iconify-icon>
+                                </div>
+                                <div class="garbage">
+                                    <iconify-icon icon="material-symbols:delete-outline-rounded" style="color: white;"
+                                        width="25"></iconify-icon>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>21,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_card">
+                    <div class="img_container">
+                        <img src="../img/couverts/couvert2.png" alt="idk">
+                    </div>
+                    <div class="text_icon">
+                        <div class="text">
+                            <p>8 pièces couverts en acier</p>
+                        </div>
+                        <div class="icon_prix">
+                            <div class="icon">
+                                <div class="pen">
+                                    <iconify-icon icon="la:pen" style="color: white;" width="25"></iconify-icon>
+                                </div>
+                                <div class="garbage">
+                                    <iconify-icon icon="material-symbols:delete-outline-rounded" style="color: white;"
+                                        width="25"></iconify-icon>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>8,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive_total">
+                    <hr>
+                    <div class="total">
+                        <div class="text_total">
+                            <p>total</p>
+                        </div>
+                        <div class="prix_total">
+                            <p>85,49€</p>
+                        </div>
+                    </div>
+                    <div class="paiement2">
+                        <form action="#">
+                            <a href="#">
+                                <button type="submit">
+                                    <p class="p_botton">paiement</p>
+                                </button>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="droite">
+                <div class="title_produits">
+                    produits
+                </div>
+                <div class="box_produit">
+                    <div class="produit">
+                        <div class="text_produit">Poêle à manche amovible</div>
+                        <div class="prix_produits">55,00€</div>
+                    </div>
+                    <div class="produit">
+                        <div class="text_produit">Ensemble d’ustensiles</div>
+                        <div class="prix_produits">21,99€</div>
+                    </div>
+                    <div class="produit">
+                        <div class="text_produit">8 pièces couverts en acier</div>
+                        <div class="prix_produits">8,50€</div>
+                    </div>
+                </div>
+                <div class="livraison_prix">
+                    <div class="text_livraison">
+                        <p>Livraison</p>
+                    </div>
+                    <div class="prix_livraison">
+                        <p>00,00€</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="total">
+                    <div class="text_total">
+                        <p>total</p>
+                    </div>
+                    <div class="prix_total">
+                        <p>85,49€</p>
+                    </div>
+                </div>
+                <div class="paiement2">
+                    <form action="#">
+                        <a href="#">
+                            <button type="submit">
+                                <p class="p_botton">paiement</p>
+                            </button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="container-footer-tablet">
+                <div class="contact-infos">
+                    <h3>CONTACT INFORMATIONS</h3>
+                    <p><box-icon name='been-here' type='solid' color='#ffffff'></box-icon>3891 Ranchview
+                        Dr.Richardson,California 62639 USA</p>
+                    <p><box-icon type='solid' name='phone' color='#ffffff'></box-icon>(603) 555-0123</p>
+                    <p><box-icon type='solid' name='envelope' color='#ffffff'></box-icon>georgia.young@example.com</p>
+                </div>
+                <div class="download">
+                    <h3>DÉCOUVREZ L'APPLICATION</h3>
+                    <a href=""><img src="../img/footer/App-Store-picto-300x94.png" class="picto" id="apple"
+                            alt="Le pictogramme de l'apple store"></a>
+                    <a href=""><img src="../img/footer/Google-Play-picto-300x89.png" class="picto"
+                            alt="Le pictogramme de google play"></a>
+                </div>
+            </div>
+            <div class="paiement">
+                <h3>PAIEMENT SÉCURISÉ</h3>
+                <div class="logos-paiement">
+                    <img src="../img/footer/Visa_2021.svg" class="logos" id="visa" alt="Le logo de visa">
+                    <img src="../img/footer/Mastercard_2019_logo.svg" class="logos" id="mastercard"
+                        alt="Le logo de mastercard">
+                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal"
+                        alt="Le logo de paypal ">
+                </div>
+            </div>
+            <div class="social-media">
+                <h3>REJOIGNEZ-VOUS</h3>
+                <box-icon name='facebook-circle' type='logo' color='#ff0800'></box-icon>
+                <box-icon name='twitter' type='logo' color='#ff0800'></box-icon>
+                <box-icon name='instagram-alt' type='logo' color='#ff0800'></box-icon>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

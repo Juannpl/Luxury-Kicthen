@@ -1,0 +1,1472 @@
+/* 
+
+    GENERAL
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root {
+    --rougelinear: rgba(224, 43, 26, 1);
+    --rougetext: #E02B1A;
+    --blanc: #fff;
+    --noirclair: #1E1E1E;
+    --noir: #121212;
+    --gris: #595959;
+}
+
+*
+
+/*,
+*::after,
+*::before*/
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+/* 
+
+    HEADER
+
+*/
+
+.header {
+    background-color: var(--rougelinear);
+    height: 6rem;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: var(--blanc);
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    padding-left: 5%;
+}
+
+<<<<<<< HEAD
+.barre_categorie {
+=======
+.logo box-icon {
+    display: none;
+}
+
+.barre_categorie{
+>>>>>>> 5f3ab4a (page produit + modif header)
+    display: none;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+#barre_categorie_mobile {
+    color: var(--blanc);
+    width: 308px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-color: var(--rougelinear);
+    transition: left 0.5s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Active class */
+#barre_categorie_mobile.active {
+    z-index: 3;
+}
+
+#transparent.active {
+    z-index: 2;
+}
+
+#transparent {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+}
+
+.reseaux {
+    justify-content: center;
+}
+
+.sociaux {
+    padding: 2%;
+}
+
+#barre_categorie_mobile ul {
+    flex-direction: column;
+}
+
+#barre_categorie_mobile ul a {
+    color: var(--blanc);
+    font-weight: 550;
+    font-size: 23px;
+}
+
+.row a{
+    color: var(--blanc);
+}
+
+#barre_categorie_mobile ul li{
+    margin: 15px 0px;
+}
+
+.nav_container {
+    justify-content: space-between;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.items_list {
+    padding: 0 0.5rem;
+    height: auto;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav_list {
+    padding-right: 3%;
+}
+
+.nav_contents {
+    width: 80%;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.nav_contents div {
+    margin: 5% 0;
+}
+
+.btn-black {
+    width: 171px;
+    height: 35px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    border: 0px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.btn-clear {
+    border: 1.7px solid var(--blanc);
+    color: var(--blanc);
+    background-color: transparent;
+    width: 133px;
+    height: 33px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.roww {
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.opacityy {
+    opacity: 63%;
+}
+
+.items p {
+    margin-left: 5%;
+}
+
+/* 
+
+    MAIN
+
+*/
+
+.btn-red {
+    height: 23px;
+    width: 135px;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--rougelinear);
+    color: var(--blanc);
+}
+
+#juan{
+    background-color: var(--noirclair);
+    padding: 2% 2%;
+}
+
+.description h2 {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--blanc);
+}
+
+/* 
+
+    SWIPE
+
+*/
+
+.controlee {
+    width: 285px;
+}
+
+.descr_panier_top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.descr_panier_top .text_panier p {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card img {
+    height: 190px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+} 
+
+.titre{
+    height: 23px;
+    /* width: 356px; */
+    color: var(--blanc);
+    margin: 1%;
+    /* padding-bottom: 3%; */
+}
+
+.titre h1 {
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.controle {
+    width: 206px;
+}
+
+.containeer {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    align-items: stretch;
+    scroll-snap-type: x mandatory;
+}
+
+.containeer::-webkit-scrollbar {
+    display: none;
+}
+
+.containeer .card {
+    background-color: #595959;
+    border-radius: 8px;
+    color: #fff;
+    margin: 5px;
+    height: 100%;
+}
+
+.containeer .card .content {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    page-break-after: 20px;
+    text-align: center;
+}
+
+button {
+    background: #E02B1A;
+    border: none;
+    border-radius: 5px;
+    height: 23px;
+    width: 135px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card img {
+    height: 190px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.descr_panier {
+    padding: 3%;
+}
+
+.text_panier p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.prix {
+    display: flex;
+    align-items: center;
+}
+
+.panier_prix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0 3% 0;
+}
+
+/* desktop = 1224px, tablette = 768px */
+/* BARRE DE ATEGORIE EN RESPONSIVE */
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .descr_panier_top .text_panier p {
+        font-size: 18px;
+    }
+
+    .text_panier p {
+        font-size: 13px;
+    }
+
+    .barre_categorie_mobile {
+        display: none;
+    }
+
+    .barre_categorie {
+        display: revert;
+        width: 70%;
+    }
+
+    .barre_categorie li {
+        padding: 0% 2%;
+    }
+    
+    .barre_categorie a {
+        color: var(--blanc);
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .nav_list {
+        padding-right: 0;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    #openBtn {
+        display: none;
+    }
+}
+
+
+/* ---------- Footer ---------- */
+
+
+
+footer {
+    width: 100%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #121212;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-infos {
+    display: none;
+}
+
+.contact-infos p {
+    font-size: 16px;
+    color: rgb(255, 255, 255, .5);
+}
+
+.container-footer h3 {
+    text-align: center;
+    margin: 25px 0 25px 0;
+    font-size: 18px;
+}
+
+.download {
+    text-align: center;
+}
+
+.picto {
+    width: 30%;
+}
+
+.logos-paiement {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#visa {
+    width: 70px;
+    height: 95px;
+}
+
+#mastercard {
+    width: 70px;
+    height: 30px;
+}
+
+#paypal {
+    width: 35px;
+    height: 35px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.arrow-icon {
+    margin: 5%;
+    text-align: center;
+}
+
+#arrow-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ---------- Page d'inscription ---------- */
+
+.create-account-container {
+    width: 100%;
+    height: 90%;
+    background-color: var(--noirclair);
+    text-align: center;
+    color: var(--blanc);
+    display: grid;
+    gap: 5px;
+    padding-top: 8%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.create-account-container h1 {
+    font-size: 18px;
+}
+
+.create-account-container h3 {
+    font-size: 12px;
+}
+
+#identification-span {
+    color: var(--rougetext);
+}
+
+.create-account-form {
+    padding: 2%;
+}
+
+.create-account-form input {
+    width: 80%;
+    height: 60px;
+    margin: 3%;
+    padding-left: 3%;
+    border-radius: 3px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 15px;
+    color: var(--blanc);
+}
+
+.conditions {
+    display: flex;
+    margin-left: 5%;
+}
+
+.conditions input{
+    width: 20px;
+    height: 20px;
+}
+
+.conditions p {
+    width: 75%;
+    margin-left: 2%;
+    padding-top: 3%;
+    font-size: 13px;
+    text-align: left;
+}
+
+.create-account-form button {
+    width: 120px;
+    height: 35px;
+    margin: 4% 0 4% 0;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.create-account-form A{
+    color: var(--blanc);
+}
+
+
+
+/* ---------- Page d'identification ---------- */
+
+
+
+.container-identification {
+    width: 100%;
+    background-color: var(--noirclair);
+    color: var(--blanc);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    gap: 20px;
+    padding: 120px 0 70px;
+}
+
+.container-identification h1 {
+    font-size: 18px;
+}
+
+.container-identification input {
+    width: 70%;
+    height: 60px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    border-radius: 3px;
+    padding-left: 2%;
+}
+
+.container-identification h3 {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.social-identification img {
+    width: 24px;
+    height: 24px;
+    margin-right: 2%;
+}
+
+.social-identification {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-identification button {
+    width: 266px;
+    height: 35px;
+    border-radius: 20px;
+    color: var(--blanc);
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fb-button {
+    width: 100%;
+    background-color: #039be5;
+    border: none;
+    cursor: pointer;
+}
+
+#apple-button {
+    background-color: var(--noir);
+    border: none;
+    cursor: pointer;
+    ;
+}
+
+#google-button {
+    background-color: var(--noirclair);
+    border: var(--blanc) 1px solid;
+    cursor: pointer;
+}
+
+.form-identification {
+    display: grid;
+    gap: 20px;
+}
+
+#connexion-button {
+    width: 140px;
+    height: 40px;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    margin: 10% 0 7% 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#connexion-button a {
+    color: var(--blanc);
+}
+
+
+
+
+/* ---------- Page d'adresse livraison ---------- */
+
+
+
+.adress-container {
+    width: 100%;
+    height: 90%;
+    background-color: var(--noirclair);
+    color: var(--blanc);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3%;
+}
+
+.adress-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.adress-container select {
+    width: 80%;
+    height: 45px;
+    margin-top: 5%;
+}
+
+.adress-container label {
+    width: 81%;
+}
+
+.adress-container input {
+    width: 80%;
+    height: 45px;
+    margin-bottom: 3%;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 1%;
+}
+
+.adress-container select {
+    margin-bottom: 3%;
+    background-color: var(--noirclair);
+    color: var(--gris);
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.adress-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adress-form h1 {
+    font-size: 18px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+#adress-label {
+    font-size: 16px;
+}
+
+.adress-form button {
+    width: 205px;
+    height: 44px;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.adress-form .conditions input {
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 9%;
+}
+
+.conditions-adress{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.conditions-adress p{
+    width: 90%;
+    height: 3vh;
+    margin-left: 3%;
+    text-align: left;
+}
+
+#conditions-adress{
+    width: 20px;
+    height: 20px;
+}
+
+.submit {
+    display: flex;
+    margin: 5% 0 10% 0;
+    text-align: center;
+}
+
+
+
+/* ---------- Page de paiement ---------- */
+
+.paiement-container {
+    width: 100%;
+    background-color: var(--noirclair);
+    color: var(--blanc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5%;
+}
+
+.paiement-container h1 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10% 0 20% 0;
+}
+
+.paiement-form-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paiement-form-container form {
+    width: 100%;
+}
+
+.account-name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.account-name input {
+    width: 98%;
+    height: 45px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: var(--blanc);
+}
+
+.account-name label {
+    margin-bottom: 3%;
+}
+
+.paiement-form-container .expiration-date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paiement-form-container .expiration-date input {
+    width: 40%;
+    height: 45px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: var(--gris);
+    margin: 3% 0 10% 0;
+}
+
+#ccv {
+    width: 98%;
+    height: 45px;
+    background-color: var(--noirclair);
+    border: var(--gris) 1px solid;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: var(--blanc);
+    margin-bottom: 10%;
+}
+
+.paiement-form-container p {
+    font-size: 15px;
+    margin-bottom: 3%;
+}
+
+#yes {
+    margin-right: 5%;
+}
+
+.paiement-form-container .submit {
+    display: flex;
+    justify-content: center;
+}
+
+.paiement-form-container .submit button {
+    width: 205px;
+    height: 44px;
+    background-color: var(--rougetext);
+    color: var(--blanc);
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10% 0 10% 0;
+}
+
+
+/* ---------- Page profil-commandes ---------- */
+
+.profil-commandes-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--noirclair);
+}
+
+.profil-commandes-container .profil-categories a {
+    color: var(--blanc);
+}
+
+.user-informations-box {
+    padding: 8% 0 8% 0;
+    display: flex;
+    align-items: center;
+    color: var(--blanc);
+}
+
+.user-informations {
+    margin-left: 5%;
+}
+
+.user-icon {
+    width: 110px;
+    height: 110px;
+}
+
+.profil-categories {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--blanc);
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: var(--rougetext);
+    text-underline-offset: 39%;
+}
+
+.historique-commandes {
+    padding-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--blanc);
+}
+
+.hr-profil {
+    margin-top: 0.2rem;
+}
+
+.history-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.historique-commandes p {
+    margin: 2%;
+    color: var(--gris);
+}
+
+
+/* ---------- Page profil-paramètres ---------- */
+
+.profil-parametres-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--noirclair);
+    color: var(--blanc);
+}
+
+.profil-parametre-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+.profil-parametre-list h4 {
+    font-size: 1rem;
+    margin: 7% 0 3% 15%;
+}
+
+.profil-parametre-list h5 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.profil-parametre-list .arrow-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.profil-parametre-list hr {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.profil-parametre-list .list {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.profil-parametre-list .disconect-btn{
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5% 0 3% 0;
+}
+
+.profil-parametre-list .disconect-btn button{
+    width: 200px;
+    height: 30px;
+}
+
+/* ---------- Page profil-compte ---------- */
+
+#top-container-profil {
+    margin-top: 5%;
+}
+
+.profil-parametres-container .swipe h1 {
+    font-weight: 500;
+}
+
+.profil-parametres-container a {
+    color: var(--blanc);
+}
+
+.profil-parametre-list .list-account{
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-profil {
+    background-color: var(--noirclair);
+}
+
+.descr_panier_top .text-profil-p p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.bottom-swipe {
+    padding-bottom: 5%;
+}
+
+.reviews-sharing {
+    display: none;
+}
+
+
+
+
+
+/* ------------------------- Tablet ------------------------- */
+
+
+
+@media only screen and (min-device-width : 768px) {
+
+
+    /* ---------- Footer ---------- */
+
+    .container-footer {
+        height: 100%;
+    }
+
+    .container-footer-tablet {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-infos {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .download {
+        width: 40%;
+    }
+
+    .picto {
+        width: 45%
+    }
+
+    .logos-paiement {
+        width: 40%;
+    }
+
+    .arrow-icon {
+        margin: 5%;
+        text-align: center;
+    }
+
+    #arrow-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    /* ---------- Page d'inscription ---------- */
+
+    .create-account-container h1 {
+        font-size: 24px;
+    }
+
+    .create-account-container h3 {
+        font-size: 17px;
+        padding-top: 1.5%;
+    }
+
+    .create-account-form input {
+        width: 60%;
+        height: 70px;
+        font-size: 18px;
+        /* padding-left: 2%; */
+        margin: 2% 0 .5% 0;
+    }
+
+    .create-account-form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .conditions {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #conditions-input{
+        width: 25px;
+        height: 25px;
+    }
+
+    .conditions p {
+        width: 65%;
+        height: 20%;
+        margin-top: 1%;
+        margin-left: 2%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+    /* ---------- Page d'identification ---------- */
+
+    .container-identification {
+        padding: 5% 0 0 0;
+    }
+
+    .container-identification h1 {
+        font-size: 24px;
+        margin-bottom: 3%;
+    }
+
+    .social-identification button {
+        width: 492px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+    .container-identification h3 {
+        font-size: 18px;
+    }
+
+    .form-identification {
+        margin-top: 3%;
+    }
+
+    .form-identification input {
+        width: 520px;
+        height: 60px;
+        font-size: 20px;
+        margin-bottom: 1%;
+    }
+
+    .form-identification button {
+        width: 246px;
+        height: 60px;
+        margin-top: 1%;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+
+    /* ---------- Page d'adresse livraison ---------- */
+
+    .adress-container h1 {
+        font-size: 24px;
+    }
+
+    .adress-container select {
+        width: 60%;
+    }
+
+    .adress-container input {
+        width: 60%;
+    }
+
+    .adress-container label {
+        width: 61%;
+        font-size: 20px;
+    }
+
+    .conditions-adress{
+        width: 61%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .conditions-adress p{
+        width: 90%;
+        height: 3vh;
+        margin-left: 3%;
+        text-align: left;
+    }
+    
+    #conditions-adress{
+        width: 20px;
+        height: 20px;
+    }
+
+
+    /* ---------- Page de paiement ---------- */
+
+    .paiement-container {
+        margin-top: -6%;
+    }
+
+    .paiement-form-container{
+        width: 50%;
+        margin-top: -10%;
+    }
+
+
+    /* ---------- Page profil-commandes ---------- */
+
+    .user-informations-box {
+        padding: 3%;
+    }
+
+    .historique-commandes {
+        padding-top: 10%;
+    }
+
+
+    /* ---------- Page profil-paramètres ---------- */
+
+    .profil-parametre-list h4 {
+        font-size: 1rem;
+        margin: 3% 0 1% 15%;
+    }
+
+    .profil-parametre-list {
+        margin-top: 2%;
+    }
+
+
+    /* ---------- Page profil-compte ---------- */
+
+    .profil-parametre-list .list-account {
+        display: none;
+    }
+
+    .profil-parametre-list .hr-infos {
+        display: none;
+    }
+
+    .titre h1 {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    #top-container-profil {
+        margin: 2%;
+    }
+
+    .bottom-swipe {
+        display: none;
+    }
+
+    .card-profil {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .reviews-sharing {
+        width: 100%;
+        height: 20vh;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .reviews,
+    .sharing {
+        width: 45%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reviews p,
+    .sharing p {
+        margin-top: 3%;
+    }
+
+    .reviews button,
+    .sharing button {
+        width: 50%;
+        height: 25%;
+        /* margin-top: 5%; */
+    }
+}
+
+
+
+/* -------------------- Desktop -------------------- */
+
+
+@media only screen and (min-device-width : 1224px) {
+
+
+    /* ---------- Footer ---------- */
+
+    .logos-paiement {
+        width: 20%;
+    }
+
+    .paiement h3 {
+        padding-top: 1%
+    }
+
+
+    /* ---------- Page d'inscription ---------- */
+
+    .create-account-container h1 {
+        font-size: 24px;
+    }
+
+    .create-account-container h3 {
+        font-size: 18px;
+        padding-top: 1.5%;
+    }
+
+    .create-account-form input {
+        width: 40%;
+        height: 80px;
+        font-size: 20px;
+        padding-left: 2%;
+        margin: 2% 0 .5% 0;
+    }
+
+    #conditions-input{
+        width: 25px;
+        height: 25px;
+    }
+
+    .conditions{
+        width: 90%;
+    }
+
+    .conditions p {
+        width: 45%;
+        margin-top: 1%;
+        margin-left: 2%;
+        font-size: 16px;
+        /* text-align: center; */
+    }
+
+    .create-account-form button {
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+
+    /* ---------- Page d'identification ---------- */
+
+    .container-identification {
+        padding-top: 3%;
+    }
+
+    .container-identification h1 {
+        margin-bottom: 1%;
+    }
+
+    .social-identification button {
+        border-radius: 20px;
+        height: 45px;
+    }
+
+    .form-identification {
+        margin-top: 1%;
+    }
+
+    .form-identification input {
+        margin-bottom: 0;
+        height: 60px;
+    }
+
+    #connexion-button {
+        margin: 4% 0 4% 0;
+    }
+
+
+    /* ---------- Page d'adresse livraison ---------- */
+
+    .conditions-adress p{
+        width: 90%;
+        height: 3vh;
+        margin-left: 3%;
+        text-align: left;
+    }
+
+    .submit{
+        padding-top: 5%;
+    }
+
+
+    /* ---------- Page de paiement ---------- */
+
+    .paiement-container {
+        margin-top: -9%;
+    }
+
+    .paiement-form-container{
+        width: 50%;
+        margin-top: -14%;
+    }
+
+    .submit{
+        margin-top: 0;
+    }
+
+
+    /* ---------- Page profil-paramètres ---------- */
+
+    .profil-parametre-list h4 {
+        margin-left: 18%;
+    }
+
+
+    /* ---------- Page profil-compte ---------- */
+
+    .bottom-swipe {
+        display: inherit;
+    }
+
+
+}

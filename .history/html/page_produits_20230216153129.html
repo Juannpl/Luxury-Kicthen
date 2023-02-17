@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/page_produits.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>Mon Panier</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav_container row">
+            <div class="logo">
+                <p>LUXURY KITCHEN</p>
+                <box-icon name='chevron-left' type='solid' color='#ffffff' size="lg"></box-icon>
+            </div>
+            <div class="barre_categorie">
+                <ul class="row">
+                    <li><a href="#">Poêles</a></li>
+                    <li><a href="#">Verres</a></li>
+                    <li><a href="#">Acessoires</a></li>
+                    <li><a href="#">Couverts</a></li>
+                    <li><a href="#">Assiettes</a></li>
+                    <li><a href="#">Moules et plaques</a></li>
+                </ul>
+            </div>
+            <div class="nav_list">
+                <ul class="row">
+                    <li class="items_list">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <li class="items_list">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <a id="openBtn">
+                        <li class="items_list">
+                            <box-icon name='menu' color='#ffffff' size=2.2rem></box-icon>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIN DE NAV DESKTOP -->
+        <!-- COMMENCEMENT DE LA BARRE DE NAVIGATION MOBILE -->
+        <div id="transparent"></div>
+        <section id="barre_categorie_mobile">
+            <div id="closeBtn">
+                <box-icon name='x' color='#ffffff' size='3rem'></box-icon>
+            </div>
+            <div class="nav_contents row">
+                <div>
+                    <ul class="row">
+                        <li><a href="#">Poêles</a></li>
+                        <li><a href="#">Verres</a></li>
+                        <li><a href="#">Acessoires</a></li>
+                        <li><a href="#">Couverts</a></li>
+                        <li><a href="#">Assiettes</a></li>
+                        <li><a href="#">Moules et plaques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="opacityy">
+                        Devenez membre pour accéder au meilleur des produits.
+                    </p>
+                </div>
+                <div>
+                    <button type="button" class="btn-black">Nous rejoindre</button>
+                </div>
+                <div>
+                    <button type="button" class="btn-clear">S'identifier</button>
+                </div>
+                <div class="items">
+                    <div class="roww">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Panier</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon type='solid' name='package' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Commande</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Mon profil</p>
+                    </div>
+                </div>
+                <div class="reseaux row">
+                    <div class="sociaux">
+                        <box-icon name='facebook-circle' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='twitter' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='instagram-alt' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE LA BARRE DE NAVIGATION MOBILE -->
+    </header>
+    <main>
+        <section class="tout">
+            <div class="wrap">
+                <div class="picture"><img src="../img/poêle/poele1.webp" alt="POÊLE"></div>
+                <div class="texte">
+                    <div class="nom_du_produit">
+                        <h3>Pôele rouge manche amovible</h3>
+                    </div>
+                    <div class="price">
+                        <h3>55,00€</h3>
+                    </div>
+                    <div class="descriptif opacityy">
+                        Son pouvoir antiadhésif renforcé va vous permettre de cuire et saisir sans risque toutes sortes
+                        d’aliments : viandes, poissons, légumes, etc. Les poêles Tentation résistent aux rayures et aux
+                        hautes
+                        températures grâce à leur épaisseur de haute qualité.
+                    </div>
+                    <div class="pricee">
+                        <h3>55,00€</h3>
+                    </div>
+                </div>
+                <div class="buy">
+                    <div class="sentence">
+                        <box-icon type='solid' name='truck' color="white"></box-icon>
+                        <p>Livraison offerte dès 40€ d'achats</p>
+                    </div>
+                    <button class="unique">
+                        <p>Ajouter au panier</p>
+                    </button>
+                    <button class="unique">
+                        <p>Acheter maintenant</p>
+                    </button>
+                </div>
+            </div>
+            <div class="swipe">
+                <div class="titre">
+                    <h1>
+                        Offres similaires
+                    </h1>
+                </div>
+                <div class="containeer">
+                    <div class="card">
+                        <div class="controlee">
+                            <img src="../img/poêle/poele10.webp" alt="poele" class="top_img">
+                        </div>
+                        <div class="descr_panier_top">
+                            <div class="text_panier">
+                                <p>SOLDES ! Poêles de cuisson</p>
+                            </div>
+                            <div class="panier_prix">
+                                <div class="ajout_panier">
+                                    <form action="#">
+                                        <a href="#"><button type="submit">
+                                                <p class="p_botton">ajout au panier</p>
+                                            </button></a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="controlee">
+                            <img src="../img/moules/moule1.jpg" alt="poele" class="top_img">
+                        </div>
+                        <div class="descr_panier_top">
+                            <div class="text_panier">
+                                <p>SOLDES ! Moules et plaques</p>
+                            </div>
+                            <div class="panier_prix">
+                                <div class="ajout_panier">
+                                    <form action="#">
+                                        <a href="#">
+                                            <button type="submit">
+                                                <p class="p_botton">ajout au panier</p>
+                                            </button>
+                                        </a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="controlee">
+                            <img src="../img/accessoire/accessoire2.webp" alt="poele" class="top_img">
+                        </div>
+                        <div class="descr_panier_top">
+                            <div class="text_panier">
+                                <p>SOLDES ! Ustensiles</p>
+                            </div>
+                            <div class="panier_prix">
+                                <div class="ajout_panier">
+                                    <form action="#">
+                                        <a href="#">
+                                            <button type="submit">
+                                                <p class="p_botton">ajout au panier</p>
+                                            </button>
+                                        </a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="controlee">
+                            <img src="../img/verres/verre10.jpg" alt="verre" class="top_img">
+                        </div>
+                        <div class="descr_panier_top">
+                            <div class="text_panier">
+                                <p>SOLDES ! Verres</p>
+                            </div>
+                            <div class="panier_prix">
+                                <div class="ajout_panier">
+                                    <form action="#">
+                                        <a href="#">
+                                            <button type="submit">
+                                                <p class="p_botton">ajout au panier</p>
+                                            </button>
+                                        </a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="controlee">
+                            <img src="../img/couverts/couvert1.png" alt="poele" class="top_img">
+                        </div>
+                        <div class="descr_panier_top">
+                            <div class="text_panier">
+                                <p>SOLDES ! Couverts</p>
+                            </div>
+                            <div class="panier_prix">
+                                <div class="ajout_panier">
+                                    <form action="#">
+                                        <a href="#"><button type="submit">
+                                                <p class="p_botton">ajout au panier</p>
+                                            </button></a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="container-footer-tablet">
+                <div class="contact-infos">
+                    <h3>CONTACT INFORMATIONS</h3>
+                    <p>
+                        <box-icon name='been-here' type='solid' color='#ffffff'></box-icon>3891 Ranchview
+                        Dr.Richardson,California 62639 USA
+                    </p>
+                    <p>
+                        <box-icon type='solid' name='phone' color='#ffffff'></box-icon>(603) 555-0123
+                    </p>
+                    <p>
+                        <box-icon type='solid' name='envelope' color='#ffffff'></box-icon>georgia.young@example.com
+                    </p>
+                </div>
+                <div class="download">
+                    <h3>DÉCOUVREZ L'APPLICATION</h3>
+                    <a href=""><img src="../img/footer/App-Store-picto-300x94.png" class="picto" id="apple"
+                            alt="Le pictogramme de l'apple store"></a>
+                    <a href=""><img src="../img/footer/Google-Play-picto-300x89.png" class="picto"
+                            alt="Le pictogramme de google play"></a>
+                </div>
+            </div>
+            <div class="paiement">
+                <h3>PAIEMENT SÉCURISÉ</h3>
+                <div class="logos-paiement">
+                    <img src="../img/footer/Visa_2021.svg" class="logos" id="visa" alt="Le logo de visa">
+                    <img src="../img/footer/Mastercard_2019_logo.svg" class="logos" id="mastercard"
+                        alt="Le logo de mastercard">
+                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal"
+                        alt="Le logo de paypal ">
+                </div>
+            </div>
+            <div class="social-media">
+                <h3>REJOIGNEZ-VOUS</h3>
+                <box-icon name='facebook-circle' type='logo' color='#ff0800'></box-icon>
+                <box-icon name='twitter' type='logo' color='#ff0800'></box-icon>
+                <box-icon name='instagram-alt' type='logo' color='#ff0800'></box-icon>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>

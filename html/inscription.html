@@ -18,42 +18,115 @@
             <div class="logo">
                 <p>LUXURY KITCHEN</p>
             </div>
+            <div class="barre_categorie">
+                <ul class="row">
+                    <li><a href="#">Poêles</a></li>
+                    <li><a href="#">Verres</a></li>
+                    <li><a href="#">Acessoires</a></li>
+                    <li><a href="#">Couverts</a></li>
+                    <li><a href="#">Assiettes</a></li>
+                    <li><a href="#">Moules et plaques</a></li>
+                </ul>
+            </div>
             <div class="nav_list">
                 <ul class="row">
-                    <li class="items_list"><box-icon name='shopping-bag' color='#ffffff' size='2rem'></box-icon></li>
-                    <li class="items_list"><box-icon name='user-circle' type='solid' color='#ffffff'
-                            size='2rem'></box-icon></li>
-                    <li class="items_list"><box-icon name='menu' color='#ffffff' size=2.5rem></box-icon></li>
+                    <li class="items_list">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <li class="items_list">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <a id="openBtn">
+                        <li class="items_list">
+                            <box-icon name='menu' color='#ffffff' size=2.2rem></box-icon>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </nav>
+        <div id="transparent"></div>
+        <section id="barre_categorie_mobile">
+            <div id="closeBtn">
+                <box-icon name='x' color='#ffffff' size='3rem'></box-icon>
+            </div>
+            <div class="nav_contents row">
+                <div>
+                    <ul class="row">
+                        <li><a href="#">Poêles</a></li>
+                        <li><a href="#">Verres</a></li>
+                        <li><a href="#">Acessoires</a></li>
+                        <li><a href="#">Couverts</a></li>
+                        <li><a href="#">Assiettes</a></li>
+                        <li><a href="#">Moules et plaques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="opacityy">
+                        Devenez membre pour accéder au meilleur des produits.
+                    </p>
+                </div>
+                <div>
+                    <button type="button" class="btn-black">Nous rejoindre</button>
+                </div>
+                <div>
+                    <button type="button" class="btn-clear">S'identifier</button>
+                </div>
+                <div class="items">
+                    <div class="roww">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Panier</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon type='solid' name='package' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Commande</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Mon profil</p>
+                    </div>
+                </div>
+                <div class="reseaux row">
+                    <div class="sociaux">
+                        <box-icon name='facebook-circle' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='twitter' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='instagram-alt' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE LA BARRE DE NAVIGATION MOBILE-->
     </header>
     <main>
         <div class="create-account-container">
             <h1>CRÉER UN COMPTE</h1>
-            <h3>Vous avez déjà un compte? <a href=""><span id="identification-span">Identifiez vous ici</span></a></h3>
+            <h3>Vous avez déjà un
+                compte? <a href=""><span id="identification-span">Identifiez vous ici</span></a></h3>
             <div class="create-account-form">
                 <form action="post">
                     <div>
-                        <input type="text" for="last-namname" placeholder="Nom">
+                        <input type="text" for="last-name" placeholder="Nom" required pattern="[a-zA-Z]{1,20}">
                     </div>
                     <div>
-                        <input type="text" for="first-name" placeholder="Prénom">
+                        <input type="text" for="first-name" placeholder="Prénom" required pattern="[a-zA-Z]{1,20}">
                     </div>
                     <div>
-                        <input type="text" for="phone" placeholder="Numéro de téléphone">
+                        <input type="text" for="phone" placeholder="Numéro de téléphone" required pattern="[0-9]{10,16}">
                     </div>
                     <div>
-                        <input type="email" for="email" placeholder="Mail">
+                        <input type="email" for="email" placeholder="Mail" required>
                     </div>
                     <div>
-                        <input type="text" for="code" placeholder="Code postal">
+                        <input type="text" for="code" placeholder="Code postal" required pattern="[0-9]{5,5}">
                     </div>
                     <div>
-                        <input type="text" for="adress" placeholder="Adresse">
+                        <input type="text" for="adress" placeholder="Adresse" required pattern="[a-zA-Z]{1,20}">
                     </div>
                     <div class="conditions">
-                        <input type="checkbox" name="sell-conditions" id="conditions">
+                        <input type="checkbox" name="sell-conditions" id="conditions-input" required>
                         <p>En créant un compte, vous acceptez les conditions de vente. Veuillez consulter notre notice
                             de protections de vos informations personnelles et notre notice cookies.</p>
                     </div>
@@ -86,7 +159,8 @@
                     <img src="../img/footer/Visa_2021.svg" class="logos" id="visa" alt="Le logo de visa">
                     <img src="../img/footer/Mastercard_2019_logo.svg" class="logos" id="mastercard"
                         alt="Le logo de mastercard">
-                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal" alt="Le logo de paypal ">
+                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal"
+                        alt="Le logo de paypal ">
                 </div>
             </div>
             <div class="social-media">
@@ -95,8 +169,12 @@
                 <box-icon name='twitter' type='logo' color='#ff0800'></box-icon>
                 <box-icon name='instagram-alt' type='logo' color='#ff0800'></box-icon>
             </div>
+            <div class="arrow-icon">
+                <a href="#top"><box-icon name='up-arrow-circle' color='#ffffff' id="arrow-icon"></box-icon></a>
+            </div>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 
 </html>

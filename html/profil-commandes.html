@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
-    <title>Adresse - LK</title>
+    <title>PROFIL-COMMANDES - LK</title>
 </head>
 
 <body>
@@ -101,38 +101,29 @@
         <!-- FIN DE LA BARRE DE NAVIGATION MOBILE-->
     </header>
     <main>
-        <div class="adress-container">
-            <div class="adress-form">
-                <h1>Indiquez votre adresse de livraison</h1>
-                <form action="post">
-
-                    <select name="country" id="" required>
-                        <option value="country">Pays</option>
-                    </select>
-
-                    <label for="last-name" id="adress-label">Nom complet</label>
-                    <input type="text" placeholder="Esther Howard" required pattern="[a-zA-Z]{1,20}">
-
-                    <label for="" id="adress-label">Numero de téléphone</label>
-                    <input type="text" placeholder="00 00 00 00 00" required>
-
-                    <label for="" id="adress-label">Adresse</label>
-                    <input type="text" placeholder="6391 Elgin St. Celina, Delaware 10299" required pattern="[a-zA-Z0-9]{1,20}">
-
-                    <label for="" id="adress-label">Code postal</label>
-                    <input type="text" placeholder="000000" required>
-
-                    <label for="" id="adress-label">Ville</label>
-                    <input type="text" placeholder="Los Angeles" required pattern="[a-zA-Z]{1,20}">
-
-                    <div class="conditions-adress">
-                        <input type="checkbox" name="sell-conditions" id="conditions-adress" required>
-                        <p>Faire de cette adresse mon adresse par defaut</p>
-                    </div>
-                    <div class="submit">
-                        <button type="submit">VALIDER CETTE ADRESSE</button>
-                    </div>
-                </form>
+        <div class="profil-commandes-container">
+            <div class="user-informations-box">
+                <div class="div-user-icon"><box-icon name='user-circle' color='#ffffff' class="user-icon"></box-icon>
+                </div>
+                <div class="user-informations">
+                    <h2>Esther Howard</h2>
+                    <p>Membre depuis janvier 2023</p>
+                </div>
+            </div>
+            <div class="profil-categories">
+                <h4><a href="profil-compte.html">COMPTE</a></h4>
+                <h4 class="active">COMMANDES</h4>
+                <h4><a href="profil-parametres.html">PARAMETRES</a></h4>
+            </div>
+            <hr class="hr-profil">
+            <div class="historique-commandes">
+                <div><box-icon name='package' type='solid' color='#ffffff' class="history-icon"></box-icon></div>
+                <div>
+                    <h3>HISTORIQUE DES COMMANDES</h3>
+                </div>
+                <div>
+                    <p>Nous n'avons aucune commande enregistrée pour ce compte</p>
+                </div>
             </div>
         </div>
     </main>
@@ -160,7 +151,8 @@
                     <img src="../img/footer/Visa_2021.svg" class="logos" id="visa" alt="Le logo de visa">
                     <img src="../img/footer/Mastercard_2019_logo.svg" class="logos" id="mastercard"
                         alt="Le logo de mastercard">
-                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal" alt="Le logo de paypal ">
+                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal"
+                        alt="Le logo de paypal ">
                 </div>
             </div>
             <div class="social-media">

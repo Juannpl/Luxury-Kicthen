@@ -18,15 +18,87 @@
             <div class="logo">
                 <p>LUXURY KITCHEN</p>
             </div>
+            <div class="barre_categorie">
+                <ul class="row">
+                    <li><a href="#">Poêles</a></li>
+                    <li><a href="#">Verres</a></li>
+                    <li><a href="#">Acessoires</a></li>
+                    <li><a href="#">Couverts</a></li>
+                    <li><a href="#">Assiettes</a></li>
+                    <li><a href="#">Moules et plaques</a></li>
+                </ul>
+            </div>
             <div class="nav_list">
                 <ul class="row">
-                    <li class="items_list"><box-icon name='shopping-bag' color='#ffffff' size='2rem'></box-icon></li>
-                    <li class="items_list"><box-icon name='user-circle' type='solid' color='#ffffff'
-                            size='2rem'></box-icon></li>
-                    <li class="items_list"><box-icon name='menu' color='#ffffff' size=2.5rem></box-icon></li>
+                    <li class="items_list">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <li class="items_list">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                    </li>
+                    <a id="openBtn">
+                        <li class="items_list">
+                            <box-icon name='menu' color='#ffffff' size=2.2rem></box-icon>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </nav>
+        <div id="transparent"></div>
+        <section id="barre_categorie_mobile">
+            <div id="closeBtn">
+                <box-icon name='x' color='#ffffff' size='3rem'></box-icon>
+            </div>
+            <div class="nav_contents row">
+                <div>
+                    <ul class="row">
+                        <li><a href="#">Poêles</a></li>
+                        <li><a href="#">Verres</a></li>
+                        <li><a href="#">Acessoires</a></li>
+                        <li><a href="#">Couverts</a></li>
+                        <li><a href="#">Assiettes</a></li>
+                        <li><a href="#">Moules et plaques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="opacityy">
+                        Devenez membre pour accéder au meilleur des produits.
+                    </p>
+                </div>
+                <div>
+                    <button type="button" class="btn-black">Nous rejoindre</button>
+                </div>
+                <div>
+                    <button type="button" class="btn-clear">S'identifier</button>
+                </div>
+                <div class="items">
+                    <div class="roww">
+                        <box-icon name='shopping-bag' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Panier</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon type='solid' name='package' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Commande</p>
+                    </div>
+                    <div class="roww">
+                        <box-icon name='user-circle' type='solid' color='#ffffff' size='1.7rem'></box-icon>
+                        <p>Mon profil</p>
+                    </div>
+                </div>
+                <div class="reseaux row">
+                    <div class="sociaux">
+                        <box-icon name='facebook-circle' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='twitter' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                    <div class="sociaux">
+                        <box-icon name='instagram-alt' type='logo' color='#ffffff'></box-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE LA BARRE DE NAVIGATION MOBILE-->
     </header>
     <main>
         <div class="container-identification">
@@ -40,19 +112,19 @@
                     GOOGLE</button>
             </div>
             <div>
-                <h3>Vous avez déjà un compte? <a href=""><span id="identification-span">Identifiez vous ici</span></a>
+                <h3>Vous avez déjà un compte? <a href="inscription.html"><span id="identification-span">Identifiez vous ici</span></a>
                 </h3>
             </div>
             <form action="" method="get">
                 <div class="form-identification">
                     <div>
-                        <input type="email" for="email" placeholder="E-mail ou numéro de téléphone">
+                        <input type="email" for="email" placeholder="E-mail ou numéro de téléphone" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                     </div>
                     <div>
-                        <input type="password" for="password" placeholder="Mot de passe">
+                        <input type="password" for="password" placeholder="Mot de passe" required pattern="^(?=.*[0-9])(?=.*[a-zA-Z])(?=\S+$).{6,20}$">
                     </div>           
                 </div>
-                <button type="submit" id="connexion-button">SE CONNECTER</button>
+                <button type="submit" id="connexion-button"><a href="profil-compte.html">SE CONNECTER</a></button>
             </form>
         </div>
     </main>
@@ -89,8 +161,12 @@
                 <box-icon name='twitter' type='logo' color='#ff0800'></box-icon>
                 <box-icon name='instagram-alt' type='logo' color='#ff0800'></box-icon>
             </div>
+            <div class="arrow-icon">
+                <a href="#top"><box-icon name='up-arrow-circle' color='#ffffff' id="arrow-icon"></box-icon></a>
+            </div>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 
 </html>

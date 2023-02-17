@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
-    <title>Adresse - LK</title>
+    <title>PROFIL-PARAMÈTRES - LK</title>
 </head>
 
 <body>
@@ -101,38 +101,105 @@
         <!-- FIN DE LA BARRE DE NAVIGATION MOBILE-->
     </header>
     <main>
-        <div class="adress-container">
-            <div class="adress-form">
-                <h1>Indiquez votre adresse de livraison</h1>
-                <form action="post">
-
-                    <select name="country" id="" required>
-                        <option value="country">Pays</option>
-                    </select>
-
-                    <label for="last-name" id="adress-label">Nom complet</label>
-                    <input type="text" placeholder="Esther Howard" required pattern="[a-zA-Z]{1,20}">
-
-                    <label for="" id="adress-label">Numero de téléphone</label>
-                    <input type="text" placeholder="00 00 00 00 00" required>
-
-                    <label for="" id="adress-label">Adresse</label>
-                    <input type="text" placeholder="6391 Elgin St. Celina, Delaware 10299" required pattern="[a-zA-Z0-9]{1,20}">
-
-                    <label for="" id="adress-label">Code postal</label>
-                    <input type="text" placeholder="000000" required>
-
-                    <label for="" id="adress-label">Ville</label>
-                    <input type="text" placeholder="Los Angeles" required pattern="[a-zA-Z]{1,20}">
-
-                    <div class="conditions-adress">
-                        <input type="checkbox" name="sell-conditions" id="conditions-adress" required>
-                        <p>Faire de cette adresse mon adresse par defaut</p>
+        <div class="profil-parametres-container">
+            <div class="user-informations-box">
+                <div class="div-user-icon"><box-icon name='user-circle' color='#ffffff' class="user-icon"></box-icon>
+                </div>
+                <div class="user-informations">
+                    <h2>Esther Howard</h2>
+                    <p>Membre depuis janvier 2023</p>
+                </div>
+            </div>
+            <div class="profil-categories">
+                <h4><a href="profil-compte.html">COMPTE</a></h4>
+                <h4><a href="profil-commandes.html">COMMANDES</a></h4>
+                <h4 class="active">PARAMETRES</h4>
+            </div>
+            <hr class="hr-profil">
+            <div class="profil-parametre-list">
+                <div class="list">
+                    <div>
+                        <h5>DONNÉES PERSONNELLES</h5>
                     </div>
-                    <div class="submit">
-                        <button type="submit">VALIDER CETTE ADRESSE</button>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <div class="list">
+                    <div>
+                        <h5>CARNET D'ADRESSE</h5>
                     </div>
-                </form>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <div class="list">
+                    <div>
+                        <h5>MODES DE PAIEMENT</h5>
+                    </div>
+                    <div>
+                        <box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon>
+                    </div>
+                </div>
+                <hr>
+                <h4>PARAMÈTRES DU SITE</h4>
+                <div class="list">
+                    <div>
+                        <h5>PAYS ET LANGUES</h5>
+                    </div>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <div class="list">
+                    <div>
+                        <h5>NOTIFICATIONS</h5>
+                    </div>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <div class="list">
+                    <div>
+                        <h5>GÉRER MON COMPTE</h5>
+                    </div>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <h4>À PROPOS DE</h4>
+                <div class="list">
+                    <div>
+                        <h5>ASSISTANCE</h5>
+                    </div>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <div class="list">
+                    <div>
+                        <h5>CONDITIONS GÉNÉRALES</h5>
+                    </div>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <div class="list">
+                    <div>
+                        <h5>DÉCLARATION DE CONFIDENTIALITÉ</h5>
+                    </div>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+                <div class="list">
+                    <div>
+                        <h5>MENTIONS LÉGALES</h5>
+                    </div>
+                    <div><box-icon name='chevron-right' color='#ffffff' class="arrow-icon"></box-icon></div>
+                </div>
+                <hr>
+
+                <div class="disconect-btn">
+                    <div>
+                        <p>V1.0</p>
+                    </div>
+                    <div>
+                        <button>Se deconnecter</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -160,7 +227,8 @@
                     <img src="../img/footer/Visa_2021.svg" class="logos" id="visa" alt="Le logo de visa">
                     <img src="../img/footer/Mastercard_2019_logo.svg" class="logos" id="mastercard"
                         alt="Le logo de mastercard">
-                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal" alt="Le logo de paypal ">
+                    <img src="../img/footer/PayPal_Logo_Icon_2014.svg" class="logos" id="paypal"
+                        alt="Le logo de paypal ">
                 </div>
             </div>
             <div class="social-media">
